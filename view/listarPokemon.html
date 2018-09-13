@@ -1,0 +1,19 @@
+<div class="jumbotron">
+    <h3>{{app}}</h3>
+    <table ng-show="cadastroPokemon.length > 0" class="table table-striped">
+        <tr>
+            <th>nome</th>
+            <th>abilidade</th>
+            <th>ataque</th>
+            <th>danoAtaque</th>
+        </tr>
+
+        <tr ng-repeat="cadastroPokemo in cadastroPokemon">
+            <td>{{cadastroPokemo.nomePokemon}}</td>
+            <td>{{cadastroPokemo.abilidade}}</td>
+            <td>{{cadastroPokemo.ataques}}</td>
+            <td>{{cadastroPokemo.danoAtaque}}</td>
+        </tr>
+    </table>
+
+</div>

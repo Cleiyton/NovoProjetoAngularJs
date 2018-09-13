@@ -1,0 +1,17 @@
+<div class="jumbotron">
+    <form name="cadastroPokemonForm"> 
+        <div class="form-group">
+            <label for="NomePokemon">Nome do Pokemon</label>
+            <input type="text" class="form-control" id="NomePokemon" name="Pokemon" placeholder="Nome do Pokemon">
+        </div>
+
+
+        <div class="form-group">
+            <label for="classe">Classe do Pokemon</label>
+            <input type="text" class="form-control" id="classe" name="classe" placeholder="Classe do Pokemon">
+        </div>
+    </form>
+
+    <button class="btn btn-primary pull-left" ng-click="adicionarCadastro(cadastro)" ng-disabled="cadastroForm.$invalid">adicionar usuario </button>
+    <a class="btn btn-primary pull-right" href="#/home">voltar</a>
+</div>
