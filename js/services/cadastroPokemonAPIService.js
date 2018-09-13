@@ -1,7 +1,7 @@
-angular.module("Pokemon").factory("cadastroPokemonAPI", function(http, config, ){
+angular.module("Pokemon").factory("cadastroPokemonAPI", function(http, config,$http ){
 
-    var _getCadastroPokemon = function(){
-        return;
+    var _salvarCadastroPokemon = function(pokemonCadastro){
+        return $http.get(config.baseUrl + "/pokemon", pokemonCadastro );
     }
 
     return{
